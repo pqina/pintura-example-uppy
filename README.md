@@ -1,8 +1,8 @@
-# Pintura Dropzone example project
+# Pintura Uppy example project
 
-Install `@pqina/pintura`, `@pqina/dropzone-pintura`, and a local node server by running `npm install`, then run `npm start` to start the server on localhost.
+Install `@pqina/pintura`, `@pqina/uppy-pintura`, and a local node server by running `npm install`, then run `npm start` to start the server on localhost.
 
-Or try it out right now and [open the project on StackBlitz](https://stackblitz.com/github/pqina/pintura-example-dropzone?file=index.html)
+Or try it out right now and [open the project on StackBlitz](https://stackblitz.com/github/pqina/pintura-example-uppy?file=index.html)
 
 ### License
 
