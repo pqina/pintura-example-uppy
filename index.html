@@ -7,48 +7,12 @@
         <title>Uppy</title>
 
         <link rel="icon" href="favicon.ico" />
-
-        <link
-            href="https://releases.transloadit.com/uppy/v2.1.0/uppy.min.css"
-            rel="stylesheet"
-        />
-
-        <link
-            rel="stylesheet"
-            href="./node_modules/@pqina/pintura/pintura.css"
-        />
     </head>
     <body>
-        <div id="drag-drop-area"></div>
-
-        <script src="https://releases.transloadit.com/uppy/v2.1.0/uppy.min.js"></script>
-
-        <script type="module">
-            import { openDefaultEditor } from './node_modules/@pqina/pintura/pintura.js';
-
-            import useEditorWithUppy from './node_modules/@pqina/uppy-pintura/dist/useEditorWithUppy.js';
-
-            const uppy = new Uppy.Core({
-                onBeforeFileAdded: useEditorWithUppy(
-                    openDefaultEditor,
-                    {
-                        /* Pintura editor options here */
-                    },
-                    () => uppy
-                ),
-            })
-                .use(Uppy.Dashboard, {
-                    inline: true,
-                    target: '#drag-drop-area',
-                })
-                .use(Uppy.Tus, { endpoint: 'https://tusd.tusdemo.net/files/' });
-
-            uppy.on('complete', (result) => {
-                console.log(
-                    'Upload complete! We’ve uploaded these files:',
-                    result.successful
-                );
-            });
-        </script>
+        <div id="app">
+            <div id="drag-drop"></div>
+            <div id="status-bar"></div>
+        </div>
+        <script src="index.js" type="module"></script>
     </body>
 </html>

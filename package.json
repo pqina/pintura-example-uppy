@@ -1,20 +1,24 @@
 {
     "private": true,
     "name": "pintura-example-uppy",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "author": "Rik Schennink at PQINA",
     "license": "https://pqina.nl/pintura/license/",
     "homepage": "https://pqina.nl/pintura/",
     "description": "A Pintura Uppy example Project",
     "main": "index.js",
     "scripts": {
-        "start": "npx http-server"
+        "start": "vite dev"
     },
     "dependencies": {
-        "@pqina/uppy-pintura": "9.x",
-        "@pqina/pintura": "^8.x"
+        "@pqina/pintura": "^8.x",
+        "@pqina/uppy-pintura": "^10.0.1",
+        "@uppy/core": "3.0.4",
+        "@uppy/drag-drop": "3.0.1",
+        "@uppy/status-bar": "3.0.1",
+        "@uppy/xhr-upload": "3.0.4"
     },
     "devDependencies": {
-        "http-server": "^14.1.1"
+        "vite": "^4.4.9"
     }
 }
